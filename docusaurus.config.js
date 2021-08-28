@@ -6,7 +6,7 @@ module.exports = {
   title: 'azure-boards-pbi-autorule',
   tagline: 'A simple azure DevOps web hook to automagically update a PBI parent state based on some rules',
   url: 'https://lorenzoscebba.github.io',
-  baseUrl: '/azure-boards-pbi-autorule/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
