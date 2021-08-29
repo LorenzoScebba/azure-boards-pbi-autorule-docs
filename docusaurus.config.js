@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'azure-boards-pbi-autorule',
   tagline: 'A simple azure DevOps web hook to automagically update a PBI parent state based on some rules',
-  url: 'https://lorenzoscebba.github.io',
+  url: 'https://azure-boards-pbi-autorule.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

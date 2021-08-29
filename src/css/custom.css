@@ -16,15 +16,6 @@
   --ifm-code-font-size: 95%;
 }
 
-@font-face {
-  font-family: "Virgil";
-  src: url("https://excalidraw.com/Virgil.woff2");
-}
-@font-face {
-  font-family: "Cascadia";
-  src: url("https://excalidraw.com/Cascadia.woff2");
-}
-
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;

@@ -32,22 +32,11 @@ Each rule can be customized and consists of the following variables:
 The above rule is triggered each time a **Task** moves from any state to **In Progress** (`IfChildState`), the rule also
 checks that the parent state is not **Done** or **Removed** (`NotParentState`) and if that's the case it modifies the
 parent state to **Committed** (`SetParentStateTo`). For this rule to work it is not necessary that all childrens are
-**In Progress** (`AllChildren`)
+**In Progress** (`AllChildren`).
 
-## How to configure it
-
-<details>
-  <summary>Expand</summary>
-
-- Create a new Service Hook in azure devops of type `Web Hook`
-- The trigger should be `Work item updated`
-    - Area Path: `[Any]` or a specific area path based on your needs
-    - Work item type: `[Any]`
-    - Tag: Leave it empty or fill it based on your needs
-    - Field: `State`
-- Url: `https://<URL_OF_SERVICE>/api/receive`
-
-</details>
+:::note
+  The parent state change is not applied if the parent is already in the `SetParentStateTo` state.
+:::
 
 ## How to run it
 
