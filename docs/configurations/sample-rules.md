@@ -12,30 +12,30 @@ Manage a Product Backlog Item given a Task state change *(with explanation!)*
   "Type": "Task",                     // Rules applied when a "Task" state changes
   "Rules": [
     {
-      "IfChildState": "To Do",        // If the "Task" goes to "To Do"
+      "IfState": "To Do",        // If the "Task" goes to "To Do"
       "NotParentStates": [            // And the parent is not in "Done" or "Removed"
         "Done",
         "Removed"
       ],
       "SetParentStateTo": "New",      // Set the parent state to "New"
-      "AllChildren": true             // Only apply this rule if all "Tasks" are in the "To Do" state
+      "All": true             // Only apply this rule if all "Tasks" are in the "To Do" state
     },
     {
-      "IfChildState": "In Progress",  // If the "Task" goes to "In Progress"
+      "IfState": "In Progress",  // If the "Task" goes to "In Progress"
       "NotParentStates": [            // And the parent is not in "Done" or "Removed"
         "Done",
         "Removed"
       ],
       "SetParentStateTo": "Committed", // Set the parent state to "Committed"
-      "AllChildren": false             // Apply this rule even if not all "Tasks" are in the "In Progress" state
+      "All": false             // Apply this rule even if not all "Tasks" are in the "In Progress" state
     },
     {
-      "IfChildState": "Done",          // If the "Task" goes to "Done"
+      "IfState": "Done",          // If the "Task" goes to "Done"
       "NotParentStates": [             // And the parent is not in or "Removed"
         "Removed"
       ],
       "SetParentStateTo": "Done",      // Set the parent state to "Done"
-      "AllChildren": true              // Only apply this rule if all "Tasks" are in the "Done" state
+      "All": true              // Only apply this rule if all "Tasks" are in the "Done" state
     }
   ]
 }
@@ -53,30 +53,30 @@ Manage a Feature state given its Product Backlog Items
   "Type": "Product Backlog Item",
   "Rules": [
     {
-      "IfChildState": "New",
+      "IfState": "New",
       "NotParentStates": [
         "Done",
         "Removed"
       ],
       "SetParentStateTo": "New",
-      "AllChildren": true
+      "All": true
     },
     {
-      "IfChildState": "Committed",
+      "IfState": "Committed",
       "NotParentStates": [
         "Done",
         "Removed"
       ],
       "SetParentStateTo": "In Progress",
-      "AllChildren": false
+      "All": false
     },
     {
-      "IfChildState": "Done",
+      "IfState": "Done",
       "NotParentStates": [
         "Removed"
       ],
       "SetParentStateTo": "Done",
-      "AllChildren": true
+      "All": true
     }
   ]
 }
