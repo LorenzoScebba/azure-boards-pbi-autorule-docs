@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A simple azure DevOps web hook to automagically update a PBI parent state based on some rules">
+      description="A simple azure DevOps web hook to automatically move a Work Item parent or childrens to a particular state based on the Work Item state updates">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

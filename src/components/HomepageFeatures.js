@@ -8,7 +8,7 @@ const FeatureList = [
         Svg: require('../../static/img/board.svg').default,
         description: (
             <>
-                azure-boards-pbi-autorule allows user to change a PBI state based on some configuration.
+                azure-boards-pbi-autorule allows user to automatically move a Work Item parent or childrens to a particular state based on the Work Item state updates.
             </>
         ),
     },
