@@ -1,4 +1,4 @@
-# Example Rules
+# Example State Rules
 
 ---
 

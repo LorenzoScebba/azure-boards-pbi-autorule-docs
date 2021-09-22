@@ -24,72 +24,72 @@ On Azure Web App, use the following variables
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__0__IfState",
+    "name": "StateRules__0__Rules__0__IfState",
     "value": "To Do",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__0__NotParentStates__0",
+    "name": "StateRules__0__Rules__0__NotParentStates__0",
     "value": "Done",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__0__NotParentStates__1",
+    "name": "StateRules__0__Rules__0__NotParentStates__1",
     "value": "Removed",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__0__SetParentStateTo",
+    "name": "StateRules__0__Rules__0__SetParentStateTo",
     "value": "New",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__0__All",
+    "name": "StateRules__0__Rules__0__All",
     "value": "true",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__1__IfState",
+    "name": "StateRules__0__Rules__1__IfState",
     "value": "In Progress",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__1__NotParentStates__0",
+    "name": "StateRules__0__Rules__1__NotParentStates__0",
     "value": "Done",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__1__NotParentStates__1",
+    "name": "StateRules__0__Rules__1__NotParentStates__1",
     "value": "Removed",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__1__SetParentStateTo",
+    "name": "StateRules__0__Rules__1__SetParentStateTo",
     "value": "Committed",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__1__All",
+    "name": "StateRules__0__Rules__1__All",
     "value": "false",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__2__IfState",
+    "name": "StateRules__0__Rules__2__IfState",
     "value": "Done",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__2__NotParentStates__0",
+    "name": "StateRules__0__Rules__2__NotParentStates__0",
     "value": "Removed",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__2__SetParentStateTo",
+    "name": "StateRules__0__Rules__2__SetParentStateTo",
     "value": "Done",
     "slotSetting": false
   },
   {
-    "name": "Rules__0__Rules__2__All",
+    "name": "StateRules__0__Rules__2__All",
     "value": "true",
     "slotSetting": false
   }
@@ -103,19 +103,19 @@ On Azure Web App, use the following variables
   "Azure__Pat": "****************************************************",
   "Azure__Uri": "https://dev.azure.com/*****",
   "Rules__0__Type": "Task",
-  "Rules__0__Rules__0__IfState": "To Do",
-  "Rules__0__Rules__0__NotParentStates__0": "Done",
-  "Rules__0__Rules__0__NotParentStates__1": "Removed",
-  "Rules__0__Rules__0__SetParentStateTo": "New",
-  "Rules__0__Rules__0__All": true,
-  "Rules__0__Rules__1__IfState": "In Progress",
-  "Rules__0__Rules__1__NotParentStates__0": "Done",
-  "Rules__0__Rules__1__NotParentStates__1": "Removed",
-  "Rules__0__Rules__1__SetParentStateTo": "Committed",
-  "Rules__0__Rules__1__All": false,
-  "Rules__0__Rules__2__IfState": "Done",
-  "Rules__0__Rules__2__NotParentStates__0": "Removed",
-  "Rules__0__Rules__2__SetParentStateTo": "Done",
-  "Rules__0__Rules__2__All": true
+  "StateRules__0__Rules__0__IfState": "To Do",
+  "StateRules__0__Rules__0__NotParentStates__0": "Done",
+  "StateRules__0__Rules__0__NotParentStates__1": "Removed",
+  "StateRules__0__Rules__0__SetParentStateTo": "New",
+  "StateRules__0__Rules__0__All": true,
+  "StateRules__0__Rules__1__IfState": "In Progress",
+  "StateRules__0__Rules__1__NotParentStates__0": "Done",
+  "StateRules__0__Rules__1__NotParentStates__1": "Removed",
+  "StateRules__0__Rules__1__SetParentStateTo": "Committed",
+  "StateRules__0__Rules__1__All": false,
+  "StateRules__0__Rules__2__IfState": "Done",
+  "StateRules__0__Rules__2__NotParentStates__0": "Removed",
+  "StateRules__0__Rules__2__SetParentStateTo": "Done",
+  "StateRules__0__Rules__2__All": true
 }
 ```
