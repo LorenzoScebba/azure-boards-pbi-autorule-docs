@@ -4,17 +4,23 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
     {
-        title: 'Easy to Use',
-        Svg: require('../../static/img/board.svg').default,
+        title: 'State Management',
         description: (
             <>
-                azure-boards-pbi-autorule allows user to automatically move a Work Item parent or childrens to a particular state based on the Work Item state updates.
+                azure-boards-pbi-autorule allows user to automatically <b>move a Work Item parent or childrens</b> to a particular <b>state</b> based on the Work Item state updates.
+            </>
+        ),
+    },
+    {
+        title: 'Area Management',
+        description: (
+            <>
+                Forgetting to put certain work items under the right <b>area path</b>? We got you! Just add some area rules!
             </>
         ),
     },
     {
         title: 'Resilient to failures',
-        Svg: require('../../static/img/resilient.svg').default,
         description: (
             <>
                 The web hook will never <i>(hopefully)</i> be restricted by Azure and will always return some response headers in case of failure
@@ -23,23 +29,19 @@ const FeatureList = [
     },
     {
         title: 'Open Source',
-        Svg: require('../../static/img/open_source.svg').default,
         description: (
             <>
-                Published under MIT License, do whatever you like with it!
+                Published under <b>MIT License</b>, do whatever you like with it!
             </>
         ),
     },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description}) {
     return (
-        <div className={clsx('col col--4')}>
-            <div className="text--center">
-                <Svg className={styles.featureSvg} alt={title}/>
-            </div>
+        <div className={clsx('col col--4 margin-bottom--lg')}>
             <div className="text--center padding-horiz--md">
-                <h3>{title}</h3>
+                <h2>{title}</h2>
                 <p>{description}</p>
             </div>
         </div>
@@ -50,7 +52,7 @@ export default function HomepageFeatures() {
     return (
         <section className={styles.features}>
             <div className="container">
-                <div className="row">
+                <div className="col">
                     {FeatureList.map((props, idx) => (
                         <Feature key={idx} {...props} />
                     ))}

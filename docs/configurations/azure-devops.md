@@ -12,12 +12,12 @@
   - Field: `State`
 - Url: `https://<URL_OF_SERVICE>/api/state`
 
----
-
-### Image walk-through
+<details>
+<summary>Image Walk-through</summary>
 
 ![web-hook](/img/web-hook.png)
 ![web-hook](/img/web-hook2.png)
+</details>
 
 ---
 

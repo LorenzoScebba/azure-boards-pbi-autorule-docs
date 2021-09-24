@@ -8,6 +8,7 @@ On Azure Web App, use the following variables
 
 ```json
 [
+  // Azure
   {
     "name": "Azure__Pat",
     "value": "****************************************************",
@@ -18,8 +19,9 @@ On Azure Web App, use the following variables
     "value": "https://dev.azure.com/*****",
     "slotSetting": false
   },
+  // State Rules
   {
-    "name": "Rules__0__Type",
+    "name": "StateRules__0__Type",
     "value": "Task",
     "slotSetting": false
   },
@@ -92,6 +94,17 @@ On Azure Web App, use the following variables
     "name": "StateRules__0__Rules__2__All",
     "value": "true",
     "slotSetting": false
+  },
+  // Area Rules
+  {
+    "name": "AreaRules__0__Type__0",
+    "value": "Custom Task",
+    "slotSetting": false
+  },
+  {
+    "name": "AreaRules__0__Rule__SetAreaPathTo",
+    "value": "lorenzoscebba\\Area2",
+    "slotSetting": false
   }
 ]
 ```
@@ -102,7 +115,8 @@ On Azure Web App, use the following variables
 {
   "Azure__Pat": "****************************************************",
   "Azure__Uri": "https://dev.azure.com/*****",
-  "Rules__0__Type": "Task",
+  
+  "StateRules__0__Type": "Task",
   "StateRules__0__Rules__0__IfState": "To Do",
   "StateRules__0__Rules__0__NotParentStates__0": "Done",
   "StateRules__0__Rules__0__NotParentStates__1": "Removed",
@@ -116,6 +130,9 @@ On Azure Web App, use the following variables
   "StateRules__0__Rules__2__IfState": "Done",
   "StateRules__0__Rules__2__NotParentStates__0": "Removed",
   "StateRules__0__Rules__2__SetParentStateTo": "Done",
-  "StateRules__0__Rules__2__All": true
+  "StateRules__0__Rules__2__All": true,
+  
+  "AreaRules__0__Type__0": "Custom Task",
+  "AreaRules__0__Rule__SetAreaPathTo": "lorenzoscebba\\Area2"
 }
 ```

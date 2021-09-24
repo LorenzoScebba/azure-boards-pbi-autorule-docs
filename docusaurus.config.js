@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'azure-boards-pbi-autorule',
-  tagline: 'A simple azure DevOps web hook to automatically move a Work Item parent or childrens to a particular state based on the Work Item state updates',
+  tagline: '',
   url: 'https://azure-boards-pbi-autorule.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',

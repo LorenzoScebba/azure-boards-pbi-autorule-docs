@@ -8,7 +8,10 @@ title: Wait what is this?
 [![Docker hub](https://res.cloudinary.com/dsb3vmg4x/image/upload/b_rgb:dae8fd,c_fit,h_20,w_100,c_pad/v1629815565/azure-boards-pbi-autorule/docker.png)](https://hub.docker.com/r/lorenzoscebba/azure-boards-pbi-autorule)
 
 This ~~demonic creation~~ project should help users of azure boards to automatically move a Work Item parent or childrens to a particular
-state based on the Work Item state updates.
+state based on the Work Item state updates. It can also automatically put work items under a certain area path on the work item creation.
+
+<details>
+<summary>State rules</summary>
 
 Each rule can be customized and consists of the following variables (when updating a parent):
 
@@ -50,3 +53,27 @@ Or the following ones (when updating the childrens)
 
 _The above rule is triggered each time a **Product Backlog Item** moves from any state to **Done** (`IfState`), and it modifies the
 childrens state to **Done** (`SetChildrenStateTo`)._
+
+</details>
+
+<details>
+<summary>Area rules</summary>
+
+Each rule can be customized and consists of the following variables:
+
+```json
+{
+  "AreaRules": [
+    {
+      "Type": ["Custom Task", "Custom Bug"], // When a custom task or a custom bug is created
+      "Rule": {
+        "SetAreaPathTo":"lorenzoscebba\\Area2" // Set its area path to lorenzoscebba\Area2
+      }
+    }
+  ]
+}
+```
+
+_The above rule is triggered each time a **Custom Task** or a **Custom Bug** is created. It then automatically assign that work item to the area path `lorenzoscebba\Area2`._
+
+</details>
